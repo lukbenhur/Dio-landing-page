@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans' , sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    text-decoration: none; 
+}
+div img{
+    display: block;
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+header{
+    background-color: #122a57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+header .list-itens , nav{
+    align-items: center;
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+header .list-itens a{
+    color: #fff;
+}
+header .menu{
+    justify-content: space-between;
+}
+nav a:hover{
+    transition: 5ms;
+    color: green;
+}
+nav a:active{
+    color:yellow;
+}
+
+/* main */
+
+.apresentacao{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+
+.texto-apresentacao h1{
+    color:#122a57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.button{
+    background-color: #122a57;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration:none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#quem-somos{
+    flex-direction: row-reverse;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-between;
+}
+#quem-somos h2{
+    font-size: 32px;
+    color: #122a57;
+    display:flex;
+    margin-bottom: 20px;
+}
+#quem-somos h2::before{
+    content:" ";
+    height: 40px;
+    width: 4px;
+    margin-right: 5px;
+    background-color: #122a57;
+    position: relative;
+}
+#quem-somos p{  
+    margin-bottom: 10px;
+    width: 90%;
+}
+#quem-somos img{
+    min-width: 320px;
+}
+
+.container-externo{
+    background-color: #122a57;
+    
+}
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#servicos h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.lista-servicos{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+
+}
+.lista-servicos .item-servicos{
+    text-align: center;
+   
+}
+.lista-servicos p{
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.item-servicos a{
+    width: 220px;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    color: #122a57;
+    font-size: 12px;
+    font-weight: 700;
+}
+.item-servicos img{
+    width: 80%;
+    margin: auto;
+}
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
+.lista-planos{
+    display: flex;
+    align-items: flex-end;
+   
+}
+
+.item-planos{
+    flex: 1;
+    margin-right: 20px;
+    border: #122a57 3px solid;
+}
+.item-planos ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-planos .button{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
